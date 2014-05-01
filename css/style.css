@@ -85,6 +85,15 @@ strong {
   -ms-filter: none;
   filter: none;
 }
+#header nav ul li.logo {
+  padding: 0;
+  margin: 0;
+  line-height: 70px;
+}
+#header nav ul li.logo img {
+  vertical-align: middle;
+  height: 32px;
+}
 article {
   background: #fff;
   color: #333;
