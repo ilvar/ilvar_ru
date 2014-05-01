@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Четверг. Деплой Метеора и виртуальные завещания | ilvar.ru</title>
+  <meta name="author" content="Arcady Chumachenko">
+
+  
+  <meta name="description" content="Не очень понимаю, как и почему, но в числе прочего Метеор предоставляет для проектов хостинг с автоматическим деплоем по типу Heroku. Простое meteor d">
+  
+  
+
+  <link rel="alternate" href="/atom.xml" title="ilvar.ru" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <header id="header" class="inner"><nav>
+  <ul>
+    
+      <li><a href="/">Блог</a></li>
+    
+      <li><a href="/archives">Архив</a></li>
+    
+  </ul>
+</nav></header>
+  <div id="content" class="inner"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title">Четверг. Деплой Метеора и виртуальные завещания</h1>
+  
+
+    <time datetime="2014-04-18T14:10:04.000Z">
+  <span class="day">18</span><span class="month">апрель</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>Не очень понимаю, как и почему, но в числе прочего Метеор предоставляет для проектов хостинг с автоматическим деплоем по типу Heroku. Простое meteor deploy feedfilter.ilvar.ru собирает проект и выливает его на feedfilter.ilvar.ru, остается только CNAME настроить. Правда, в моем случае этот вариант не очень годится - мне нужны серверные задачи типа сбора фидов, но пока что я их решил, запуская задачи по крону у себя, они подключаются через метеоровский DDP и все делают. Видимо, со временем надо будет переписать сбор обновлений под метеоровские пакеты (нынешнего rssparser под метеор нет).</p>
+<p>Также в качестве “проекта дня” сделал UI и клиентское шифрование-расшифровку для рождаемого вместе с Апачем прототипа сервиса виртуальных завещаний. Смысл в том, чтобы раздать сервису указания на случай серьезных неприятностей, а сервис уже будет периодически проверять, все ли в порядке, и если нет - выполнит запланированные задачи. Пока что основной юзкейс - передача паролей и всего такого близкому другу, а для максимальной секурности мы храним только либо данные в AES, либо пароль от этих данных, а вторую “половину” юзер должен передать доверенному лицу сам. Таким образом, мы только обеспечиваем разделение “половин” до часа Х.</p>
+<p>Оказалось, что современные браузерные API вполне себе позволяют без участия сервера забрать данные из выбранного файлового инпута, обработать их и, например, дать юзеру “скачать” обратно на диск. Впрочем, после полноценных 3d-движков актуального уровня, работающих на js в браузере, я ничему не удивляюсь.</p>
+<p>Завтра займусь прототипированием UI для толстого облачного приложения. И BkMe надо немного дополировать, в начале следующей недели ее презентуем питерским велосипедистам.</p>
+<p>В целом, похоже, идея кодомарафона себя оправдала (отдельно я итоги подведу где-то в выходные). Всего за неделю я серьезно почистил свои записки с идеями, “встряхнулся” и сделал серьезный задел - доводка до ума всего начатого спокойно займет еще неделю-две. И это прекрасно.</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/марафон/">марафон</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article></div>
+  <footer id="footer" class="inner"><div class="social alignright">
+  
+    <a class="facebook" href="http://www.facebook.com/https://www.facebook.com/arcady.chumachenko" title="Facebook">Facebook</a>
+  
+  
+  
+    <a class="twitter" href="http://twitter.com/https://www.twitter.com/ravli" title="Twitter">Twitter</a>
+  
+  
+    <a class="github" href="https://github.com/https://www.github.com/ravli" title="GitHub">GitHub</a>
+  
+  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+</div>
+<p>
+  
+  &copy; 2014 Arcady Chumachenko
+  
+</p>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="phasebeam">
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+</div>
+<script src="/js/phasebeam.js"></script>
+</body>
+</html>

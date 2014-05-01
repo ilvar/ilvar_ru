@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Понедельник. Bkme и PhoneGap | ilvar.ru</title>
+  <meta name="author" content="Arcady Chumachenko">
+
+  
+  <meta name="description" content="На этой неделе решил устроить небольшой марафон и каждый день делать что-то клевое, с упором на незнакомые технологии и практики.
+Сегодня сделал для b">
+  
+  
+
+  <link rel="alternate" href="/atom.xml" title="ilvar.ru" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <header id="header" class="inner"><nav>
+  <ul>
+    
+      <li><a href="/">Блог</a></li>
+    
+      <li><a href="/archives">Архив</a></li>
+    
+  </ul>
+</nav></header>
+  <div id="content" class="inner"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title">Понедельник. Bkme и PhoneGap</h1>
+  
+
+    <time datetime="2014-04-15T10:13:00.000Z">
+  <span class="day">15</span><span class="month">апрель</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>На этой неделе решил устроить небольшой марафон и каждый день делать что-то клевое, с упором на незнакомые технологии и практики.</p>
+<p>Сегодня сделал для bkme привязку комментариев к точкам и кускам маршрута (здесь пришлось вспомнить даже школьный матан). Теперь можно при комментировании не описывать словесно “100 метров от перекрестка Пупкина и Мумкина”, а поставить точку и написать, чем эта точка хороша. Или отметить кусок маршрута и написать, что в межсезонье там дорогу размывает к чертям. А с моей стороны можно будет повторно использовать этот код для финальной цели системы комментирования - внесения поправок в чужие маршруты.</p>
+<p>Правда, это не все. Разогнавшись, я со всего размаху вляпался в PhoneGap и сделал прототип андроидного клиента для того же bkme. Он пока что умеет только показывать карту с маркерами (как морда сайта) и называется HelloWorld.apk, но собирается, ставится и даже работает. Судя по всему, в будущем можно будет даже оффлайновые карты сделать, проблема там только в объемах — не самые подробные карты Питера (внутри КАД) весят около 100 метров, и зашивать их в apk совсем не комильфо. Надо будет подумать, как бы их так хранить отдельно, а в идеале - давать предзагружать нужный город для использования “на ходу”.</p>
+<p>Оный PhoneGap представляет собой отличный пример java-приложения - долго (для двухметрового файла, в котором почти ничего не поменялось) компилит, весит вместе с SDK и эмулятором метров 300, и не имеет практически никаких адекватных средств дебага. Пришлось щедро обмазать код try {} catch(e) { alert(e); }, чтобы докопаться до истины и завести наконец эту карту и маркеры.</p>
+<p>Завтра попробую реанимировать свой FeedFilter, только не на Derby, а на Meteor.</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/марафон/">марафон</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article></div>
+  <footer id="footer" class="inner"><div class="social alignright">
+  
+    <a class="facebook" href="http://www.facebook.com/https://www.facebook.com/arcady.chumachenko" title="Facebook">Facebook</a>
+  
+  
+  
+    <a class="twitter" href="http://twitter.com/https://www.twitter.com/ravli" title="Twitter">Twitter</a>
+  
+  
+    <a class="github" href="https://github.com/https://www.github.com/ravli" title="GitHub">GitHub</a>
+  
+  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+</div>
+<p>
+  
+  &copy; 2014 Arcady Chumachenko
+  
+</p>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="phasebeam">
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+</div>
+<script src="/js/phasebeam.js"></script>
+</body>
+</html>
